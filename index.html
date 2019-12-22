@@ -614,7 +614,7 @@ $(document).ready(function(){
                             	<!-- <div class="w-100"><img src="./assets/images/jpmc.jpeg" width="320" height="50" /></div> -->
                             	<b style="font-size: 32px; color: navy">Unify IoT Technologies</b>
                             	<br/>
-                            	<b style="font-size: 20px; color: black">Embedded Software Engineer (w/ Blockchain for IoT IPFS PoC) [ May 2018 - May 2019 ]</b><br/>
+                            	<b style="font-size: 20px; color: black">Embedded Software Engineer (w/ Blockchain for IoT IPFS PoC) [ Jun 2018 - May 2019 ]</b><br/>
                             	<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;Researched into Blockchain usage for IoT by creating a PoC (Proof of Concept) to eliminate cloud middleman using IPFS (Inter Planetary File System)</div>
                             	<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;<a href="https://github.com/riteshRcH/mDNS_ESP8266_SmartWiFiSocket" target="_blank" >Smart WiFi Socket ( ESP8266 micro-controller, NodeMCU Lua firmware) discoverable over mDNS with features such as Timers, Calendar Sync, Mobile Charging Auto-Off, Easy Setup, Travel Mode</a></div>
                             	<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;<a href="https://github.com/riteshRcH/Smart_Lid" target="_blank" >Smart Lid: Water Tank Level Switch to auto-turn on/off pump based on current tank Level (AVR, Ultrasonic sensor & HC06 Bluetooth)</a></div>
@@ -822,74 +822,71 @@ $(document).ready(function(){
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/mDNS_ESP8266_SmartWiFiSocket" target="_blank">
                                     <div class="card-header" style="color: white">Smart WiFi Socket: ESP8266 Micro-controller & NodeMCU Lua Firmware [ 2019 ]</div>
-                                    <div class="card-body" style="color: white"><i class="fas fa-star" style="color:gold"></i>&nbsp;Discoverable over mDNS<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Calendar synced one-shot & recurring schedules & Timers<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Mobile Charging Auto-Off<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Easy Setup into 1 of two modes: Fixed (to WiFi router) or Portable (Travel)</div>
+                                    <div class="card-body" style="color: white"><i class="fas fa-star" style="color:gold"></i>&nbsp;Discoverable over mDNS<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Calendar synced one-shot & recurring schedules & Timers<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Mobile Charging Auto-Off<br/><i class="fas fa-star" style="color:gold"></i>&nbsp;Easy Setup into 2 modes: Fixed (to WiFi router) or Portable (Travel)</div>
                                     <div class="card-footer" style="color: white">ESPlorer IDE, Android App, ESP8266, Relay</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/Smart_Lid" target="_blank">
                                     <div class="card-header" style="color: white">Smart Lid Water Tank Level Monitoring [ 2018 ]</div>
-                                    <div class="card-body" style="color: white">This project aims to monitor water tank level and accordingly turn water pump on/off w.r.t user defined threshold %. Current level can be monitored & accessed using companion Android app</div>
+                                    <div class="card-body" style="color: white">Monitors water tank level and accordingly turns water pump on/off w.r.t user defined threshold %. Current level can be monitored & accessed using companion Android app</div>
                                     <div class="card-footer" style="color: white">Arduino IDE, Android App, AVR, Ultrasonic Sensor (PWM), HC06</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/pxe_server_rpi_cluster" target="_blank">
-                                    <div class="card-header" style="color: white">Portable Computing Environment Using Raspberry Pi Cluster (Python PXE Server) [ 2015 Final Year B.E Comp ]</div>
-                                    <div class="card-body" style="color: white">A number of Raspberry Pi's were "known" to each over LAN with 1 of them hosting a PXE (Preboot eXecution Environment) server (includes local HTTP server, local TFTP server, local DHCP server OR the ability to forward DHCP DORA (Discover, Offer, Request, Acknowledge) packets to proxy DHCP server such as a WiFi router). PXE is a protocol & standard (now incorported into UEFI (Unified Extensible Firmware Interface)) by Intel which specifies way for network booting a PC (with disk or diskless) off an iso hosted on some other host. Whenever a computer boots up, there is a CPU RESET event and then the control gets transferred to the BIOS/UEFI which performs POST (Power on Self-Test) and then it looks for a bootloader in the defined boot sequence (hard disk/partition/usb-drive order). Usually the computer boots up from the hard drive or USB by executing the bootloader which in turn loads the kernel into RAM followed by other OS files; this project instead aims to boot a computer after acquiring file(s) via the Network Interface Card (NIC) using PXE protocol to create a portable computing environment by loading the whole OS into RAM. This project acquires the necessary files to boot either using HTTP over LAN/Internet or via TFTP. Local HTTP, DHCP & TFTP are coded purely/fully in python.</div>
+                                    <div class="card-header" style="color: white">PXE N/W Boot Server [ 2015 B.E Final Year ]</div>
+                                    <div class="card-body" style="color: white">A number of Raspberry Pi's were "known" to each over LAN with 1 of them hosting a PXE (Preboot eXecution Environment) server with ability to boot clients off local/internet HTTP server & local TFTP server. IP configuration done using local DHCP server OR proxy DHCP (Eg: WiFi router) by forwarding DHCP DORA packets.</div>
                                     <div class="card-footer" style="color: white">Python on Raspberry Pi Cluster</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/DDoSBotnet" target="_blank">
-                                    <div class="card-header" style="color: white">Experimental DDoS Botnet [ 2014 B.E Comp Seminar Subject ]</div>
-                                    <div class="card-body" style="color: white">Botnet is basically an army of compromised hosts that have software bots running in background. These bots blindly follow the commands given by a central Command and Control (CNC) Server. My project had a CNC FTP and Web based server which commanded bots located at some remote location to carry out Distributed Denial of Service (DDoS) attack on a victim
-server using different methods such as PingFlood, TCP SYN Flood etc.</div>
+                                    <div class="card-header" style="color: white">Experimental DDoS Botnet [ 2014 B.E Seminar Course ]</div>
+                                    <div class="card-body" style="color: white">Botnet is an army of compromised hosts with background software bots which blindly follow commands by central Command & Control (CNC) Server. My botnet initiated Distributed Denial of Service (DDoS) attack on a victim server using different methods such as PingFlood, TCP SYN Flood etc.</div>
                                     <div class="card-footer" style="color: white">Android SDK, Java, PHP, MySQL, C#, DDNS</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/cricomania_cricket_player_auction_tracking" target="_blank">
-                                    <div class="card-header" style="color: white">Cricket Player Auctioning Software [ 2014 Computer Society of India B.E Comp ]</div>
+                                    <div class="card-header" style="color: white">Cricket Player Auctioning Software [ 2014 B.E CSI ]</div>
                                     <div class="card-body" style="color: white">A complete package of 5 applications made exclusively for Cricomania event of CSI-VESIT. Components include:<br/> <i class="fas fa-star" style="color:gold"></i> Android App and Server over Wi-Fi to track scores of events played<br/> <i class="fas fa-star" style="color:gold"></i> Auction handler (which team bought which player) and who won based on total brand value of players</div>
                                     <div class="card-footer" style="color: white">Android SDK, Java Sockets, PHP, MYSQL</div></a>
                                 </div>
 
 				<div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/vesit_attendance_monitoring_system" target="_blank">
-                                    <div class="card-header" style="color: white">Automated Attendance Monitoring System [ 2014 Exclusive Scholarship Program B.E Comp ]</div>
-                                    <div class="card-body" style="color: white">Android App that automates the manual paper-based work of taking attendance. Architecture is independent of time table, shifts, etc hence would be applicable for any university.</div>
+                                    <div class="card-header" style="color: white">Automated Attendance Monitoring System [ 2014 B.E Exclusive Scholarship Program ]</div>
+                                    <div class="card-body" style="color: white">Android App automating manual paper-based work of taking attendance for my Undergrad University. Architecture is independent of time table, shifts, etc therefore would be applicable for any university.</div>
                                     <div class="card-footer" style="color: white">Android SDK, Java Sockets, PHP, MYSQL</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/Computer_Builder_Website" target="_blank">
-                                    <div class="card-header" style="color: white">Computer Builder Website [ 2014 Web Engg B.E Comp ]</div>
-                                    <div class="card-body" style="color: white">A website that provided users a guided tour in selecting their own high end computer keeping in mind compatibility and performance.</div>
-					<div class="card-footer">PHP, MYSQL, HTML</div></a>
+                                    <div class="card-header" style="color: white">Computer Builder Website [ 2014 B.E Web Engg ]</div>
+                                    <div class="card-body" style="color: white">Website providing users guided tours to select their own high-end computer keeping in mind compatibility & performance.</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/CSI_VESIT_Experience_2014" target="_blank">
-                                    <div class="card-header" style="color: white">CSI-VESIT Experience Android App [ 2014 Computer Society of India B.E Comp ]</div>
-                                    <div class="card-body" style="color: white">CSI-VESIT Society App for its members gave them an opportunity to get to know about the schedule and event descriptions beforehand using RSS based notifications.</div>
+                                    <div class="card-header" style="color: white">CSI-VESIT Experience Android App [ 2014 B.E CSI ]</div>
+                                    <div class="card-body" style="color: white">Developed an android application for CSI VESIT, features include extensive feed parsing and caching, RSS notifications. It is being extensively used by CSI members to get information regarding day to day events, their schedule, descriptions & online registration.</div>
                                     <div class="card-footer" style="color: white">Android SDK, RSS</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/CSI_WiFi_MCQ_Quiz_Sockets" target="_blank">
-                                    <div class="card-header" style="color: white">Wireless MCQ Quiz [ 2013 Computer Society of India B.E Comp ]</div>
-                                    <div class="card-body" style="color: white">Earlier without this app, elimination round for events used to be paper based and results would come out the next day after manually checking the papers.</div>
+                                    <div class="card-header" style="color: white">Wireless MCQ Quiz Android App [ 2013 B.E CSI ]</div>
+                                    <div class="card-body" style="color: white">Earlier without this app, elimination round for CSI events used to be paper based and results would come out the next day after manually checking the papers.</div>
                                     <div class="card-footer" style="color: white">Android SDK, Java Multithreding, Sockets & Swing, XML/EXI</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/Sentiment_Analysis_Supervised_ML" target="_blank">
-                                    <div class="card-header" style="color: white">Sentiment Analysis using Opinion Mining [ 2012 Internship Diploma Year 3 Vacations ]</div>
-                                    <div class="card-body" style="color: white">Predefined 8 movie review sites were chosen and split into half consisting of training dataset and test dataset. I developed an ASP.NET + SQL Server Web App which crawled (fixed depth) the test dataset, and for each movie the movie name, details, review and user comments were scraped out with help of Html Agility Pack’s DOM based Library. These were then
-tokenized and matched against a DB of words (adjectives majorly) to produce scores (+ve, -ve and neutral). Score obtained after scraping test dataset and scores calculated previously using training data set were averaged to get final rating out of 5.</div>
+                                    <div class="card-header" style="color: white">Sentiment Analysis using Opinion Mining [ 2012 Summer Vacation Internship ]</div>
+                                    <div class="card-body" style="color: white">8 movie review sites = 4 Training Dataset + 4 Test Dataset. Web App crawled (fixed depth) the training dataset, & for each movie, its name, details, review & user comments were scraped out using Html Agility Pack’s DOM based Library. These were tokenized & matched against a DB of words (adjectives majorly) to produce scores (+ve, -ve & neutral). Score obtained after scraping test dataset & scores calculated previously using training data set were averaged to get final rating out of 5.</div>
                                     <div class="card-footer" style="color: white">ASP.NET (C#), SQL Server, Supervised Machine Learning</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/RecordShot" target="_blank">
-                                    <div class="card-header" style="color: white">RECORDSHOT (Audio & Screen Recorder for (Non) Rooted Phones) [ 2012 Final Year Diploma ]</div>
-                                    <div class="card-body" style="color: white">This app helps users to take screenshots and record their screen. App captures the frame buffer which needs root user/superuser permissions (Linux-based Android OS), hence the app is a rooted one. There is also a non-rooted version which loads the background service off the PC to the mobile via an automated BASH/BATCH/PS script.</div>
+                                    <div class="card-header" style="color: white">RECORDSHOT (Audio & Screen Recorder for (Non) Rooted Phones) [ 2012 Diploma Final Year ]</div>
+                                    <div class="card-body" style="color: white">Rooted version captures frame buffer which needs root/superuser permissions (Linux-based Android OS). Non-rooted version loads the background service off the PC to mobile via an automated BASH/BATCH/PS script.</div>
                                     <div class="card-footer" style="color: white">Android SDK, Shell Scripting</div></a>
                                 </div>
 
                                 <div class="mb-3 card text-white bg-royal"><a href="https://github.com/riteshRcH/Xquisite_Game_Zone_2010" target="_blank">
-                                    <div class="card-header" style="color: white">Xquisite Game Zone [ 2010 OOP Diploma ]</div>
+                                    <div class="card-header" style="color: white">Xquisite Game Zone [ 2010 Diploma OOP ]</div>
                                     <div class="card-body" style="color: white">A simple collection of interactive GUI mouse based games (Bingo, Xn0, Bingo, Pac man)</div>
                                     <div class="card-footer" style="color: white">C++ BGI (Borland Graphics Interface)</div></a>
                                 </div>
@@ -935,19 +932,19 @@ tokenized and matched against a DB of words (adjectives majorly) to produce scor
                             	<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;<b>Senior Technical Officer @ Computer Society of India (CSI) [ 2013-14 ]</b></div>
                             	<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;<b>Junior Technical Officer @ Computer Society of India (CSI) [ 2012-13 ]</b></div>
                             	<div style="margin-left: 20px;">Was a part of the council where in we conducted many technical and non technical events for our members, some of them were as follows:<br/>
-<i class="fa fa-circle fa-sm"></i> Python workshop in collaboration with Indian Institute of Technology (IIT) Bombay<br/>
-<i class="fa fa-circle fa-sm"></i> Cricomania: an event where in teams would bid for their favorite cricket players in order to maximize their total brand value<br/>
-<i class="fa fa-circle fa-sm"></i> Casino Royale: a collection of casino games such as Blackjack, Roulette etc<br/>
-<i class="fa fa-circle fa-sm"></i> Computer Fundamentals: An event where in council members presented the inner workings of a computer right from BIOS to OS concepts<br/>
-<i class="fa fa-circle fa-sm"></i> CSI Experience Android App: Developed an Android app which helped our members to view schedule and timings of upcoming events<br/>
-<i class="fa fa-circle fa-sm"></i> Code Breaker and Hidden Cipher: We prepared various cipher-texts and anagrams which the teams had to decipher in order to win and reach the treasure<br/>
-<i class="fa fa-circle fa-sm"></i> Conducted a hands on workshop on Adobe Flash and ActionScript<br/>
-<i class="fa fa-circle fa-sm"></i> Conducted a hands on workshop on Dot Net<br/>
-<i class="fa fa-circle fa-sm"></i> Idiot Box: An event where the couch potato wins by answering various nitty gritty detailed questions on TV series and movies<br/>
-<i class="fa fa-circle fa-sm"></i> LAN Gaming (Fifa, CS etc)<br/>
-<i class="fa fa-circle fa-sm"></i> Ultimate Coder: Presented the teams with a problem statement which they coded in a stipulated span of time. Input, Output and Algorithm space and time complexity was measured in order to finalize the winner.<br/>
-<i class="fa fa-circle fa-sm"></i> Ethical Hacking: Hands on Workshop to demonstrate various attacks such as XSS, Wireless attacks etc using BackTrack/Kali Linux<br/>
-<i class="fa fa-circle fa-sm"></i> Componect: Portmanteau of Component and Connect, in this event teams answered various questions and using the points gained they purchased their PC components in order to build the ultimate high performance PC<br/></div>
+                                <i class="fa fa-circle fa-sm"></i> Ultimate Coder: Presented the teams with a problem statement which they coded in a stipulated span of time. Input, Output and Algorithm space and time complexity was measured in order to finalize the winner.<br/>
+                                <i class="fa fa-circle fa-sm"></i> Ethical Hacking: Hands on Workshop to demonstrate various attacks such as XSS, Wireless attacks etc using BackTrack/Kali Linux<br/>
+                                <i class="fa fa-circle fa-sm"></i> Python workshop in collaboration with Indian Institute of Technology (IIT) Bombay<br/>
+                                <i class="fa fa-circle fa-sm"></i> Cricomania: an event where in teams would bid for their favorite cricket players in order to maximize their total brand value<br/>
+                                <i class="fa fa-circle fa-sm"></i> Casino Royale: a collection of casino games such as Blackjack, Roulette etc<br/>
+                                <i class="fa fa-circle fa-sm"></i> Computer Fundamentals: An event where in council members presented the inner workings of a computer right from BIOS to OS concepts<br/>
+                                <i class="fa fa-circle fa-sm"></i> CSI Experience Android App: Developed an Android app which helped our members to view schedule and timings of upcoming events<br/>
+                                <i class="fa fa-circle fa-sm"></i> Code Breaker and Hidden Cipher: We prepared various cipher-texts and anagrams which the teams had to decipher in order to win and reach the treasure<br/>
+                                <i class="fa fa-circle fa-sm"></i> Conducted a hands on workshop on Adobe Flash and ActionScript<br/>
+                                <i class="fa fa-circle fa-sm"></i> Conducted a hands on workshop on Dot Net<br/>
+                                <i class="fa fa-circle fa-sm"></i> Idiot Box: An event where the couch potato wins by answering various nitty gritty detailed questions on TV series and movies<br/>
+                                <i class="fa fa-circle fa-sm"></i> LAN Gaming (Fifa, CS etc)<br/>
+                                <i class="fa fa-circle fa-sm"></i> Componect: Portmanteau of Component and Connect, in this event teams answered various questions and using the points gained they purchased their PC components in order to build the ultimate high performance PC<br/></div>
 								<br/>
 								<div><i class="fa fa-star" style="color: navy"></i>&nbsp;&nbsp;<b>Member @ Institute of Electrical and Electronics Engineers (IEEE) [ 2012-14 ]</b></div>
 								<div style="margin-left: 20px">
