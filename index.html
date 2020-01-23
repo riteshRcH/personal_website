@@ -60,7 +60,7 @@ $(document).ready(function(){
 
   	if($.trim($("#contactName").val()) && $.trim($("#contactEmail").val()) && regex.test($("#contactEmail").val()))
   	{
-  		$('#exampleModal .close').click();
+  		$('#contactModal .close').click();
 
   		$.ajax(
   		{
@@ -546,7 +546,7 @@ $(document).ready(function(){
                                 </li>
                                 <li>
                                 	<!--href = javascript void (0) makes a link but does NOTHING-->
-                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal">
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#contactModal">
                                         <i class="fa fa-phone metismenu-icon" style="color:#00FF00"></i>
                                         <p class="cyan_text_color" style="color: cyan">CONTACT</p>
                                     </a>
@@ -908,16 +908,21 @@ $(document).ready(function(){
                             </div>
 
                             <div id="awards" class="card-shadow-alternate border mb-3 card card-body border-alternate">
-                            	<span style="font-size: 32px; color: navy"><b>ACHIEVEMENTS & AWARDS</b></span>
+                            	<span style="font-size: 32px; color: navy"><b>ACHIEVEMENTS & AWARDS<br/>Note: Click on images for enlarged image modals</b></span>
 				<br/>
 				<div><i class="fa fa-trophy" style="color: navy"></i>&nbsp;&nbsp;<b>Awarded $5000 scholarship @ USC Viterbi [ 2020 ]</b></div>
-                            	<br/><img src="./assets/images/scholarship.png" width=250 height="324" /><br/>
+                            	<br/><a href="javascript:void(0);" data-toggle="modal" data-target="#scholarshipModal"><img src="./assets/images/scholarship.png" width=250 height="324" /></a><br/>
                             	<br/>
                             	<div><i class="fa fa-trophy" style="color: navy"></i>&nbsp;&nbsp;<b>JP Morgan Chase Tech Savvy title awarded [ 2015 ]</b></div>
-                            	<br/><img src="./assets/images/tech_savvy_award.png" width=250 height="190" /><br/>
+                            	<br/>
+                            	<a href="javascript:void(0);" data-toggle="modal" data-target="#jpmcTechSavvyModal">
+                            	<img src="./assets/images/tech_savvy_award.png" width=250 height="190" />
+                            	</a>
+                            	<br/>
                             	<br/>
                             	<div><i class="fa fa-trophy" style="color: navy"></i>&nbsp;&nbsp;<b>Ranked 1st in ALL 3 years of Diploma in Computer Technology branch [ 2009-2012 ]</b></div>
-                            	<br/><img src="./assets/images/diploma_rank1.png" height="210" width="280" />
+                            	<br/><a href="javascript:void(0);" data-toggle="modal" data-target="#diplomaRank1Modal">
+                            		<img src="./assets/images/diploma_rank1.png" height="210" width="280" /></a>
                             </div>
 
                             <div id="organizations" class="card-shadow-info border mb-3 card card-body border-info">
@@ -1674,11 +1679,11 @@ botnets-targeting-application-layer" target="_blank">Available here</a></span>
         </div>
     </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                <h5 class="modal-title" id="contactModalLabel">Contact</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -1700,6 +1705,60 @@ botnets-targeting-application-layer" target="_blank">Available here</a></span>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button id="contactSubmitBtn" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="diplomaRank1Modal" tabindex="-1" role="dialog" aria-labelledby="diplomaRank1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="diplomaRank1ModalLabel">Diploma Rank 1, ALL 3 years in Comp Tech Dept </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="./assets/images/enlarged/diploma_rank1.jpg" style="height:250px; width: 100%;" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="jpmcTechSavvyModal" tabindex="-1" role="dialog" aria-labelledby="jpmcTechSavvyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jpmcTechSavvyModalLabel">JP Morgan Chase Tech Savvy Award</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="./assets/images/enlarged/tech_savvy_award.jpg" style="height:250px; width: 100%;" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="scholarshipModal" tabindex="-1" role="dialog" aria-labelledby="scholarshipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scholarshipModalLabel">$5000 Scholarship @ USC Viterbi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="./assets/images/enlarged/scholarship.png" style="height:380px; width: 100%;" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
