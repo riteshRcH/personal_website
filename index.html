@@ -70,7 +70,8 @@ $(document).ready(function(){
   			contentType: 'application/x-www-form-urlencoded',
   			success: function(data, txtStatus, jqxhr)
   			{
-  				$.toast({ heading: 'Success', showHideTransition: 'slide', icon: 'success', position: 'mid-center' });
+				if (data === "success")
+  					$.toast({ heading: 'Success', showHideTransition: 'slide', icon: 'success', position: 'mid-center' });
   				$("#contactName").val("");
   				$("#contactEmail").val("");
   				$("#contactMessage").val("");
