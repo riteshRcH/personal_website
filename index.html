@@ -72,6 +72,8 @@ $(document).ready(function(){
   			{
 				if (data === "success")
   					$.toast({ heading: 'Success', showHideTransition: 'slide', icon: 'success', position: 'mid-center' });
+				else if(data === "error")
+					$.toast({ heading: 'Error', showHideTransition: 'slide', icon: 'error', text: 'Please try again', position: 'mid-center' });
   				$("#contactName").val("");
   				$("#contactEmail").val("");
   				$("#contactMessage").val("");
